@@ -185,6 +185,10 @@ PRODUCT_PACKAGES += \
     libldacBT_dec \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
+# Blur Saxx full mutthi
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1
+
 # Boot SPL
 BOOT_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
 
